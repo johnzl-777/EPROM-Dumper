@@ -40,20 +40,20 @@ void loop()
 void print_data(bool full_data)
 {
 
-  if(full_data)
+  if(full_data) //If data option is 1 (TRUE)
   {
-    Serial.print(PINL, HEX);
-    Serial.print(" ");
-    Serial.print(PORTC, BIN);
-    Serial.print(" ");
-    Serial.print(PORTA, BIN);
+    Serial.print(PINL, HEX);    //Print data received from L register pins
+    Serial.print(" ");          //Print a space 
+    Serial.print(PORTC, BIN);   //Print Upper Address
+    Serial.print(" ");          //Print a space
+    Serial.print(PORTA, BIN);   //Print Lower Address
     Serial.print("\n");
     
   }
-  else
+  else                          //If data option is 0 (FALSE)
   {
-    Serial.print(PINF, HEX);
-    Serial.print(" ");
+    Serial.print(PINF, HEX);    //Print data received from L register pins
+    Serial.print(" ");          //Print space
   }
 }
 
