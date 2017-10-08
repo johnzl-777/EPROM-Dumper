@@ -33,7 +33,7 @@ The EPROM Dumper works as such:
    
 ## To-Do
 
-These are things I might possibly consider doing with the program later in time. 
+These are things I might possibly consider doing with the EPROM dumper later in time. 
 
 ### High priority
 * Experiment with increasing baud rate
