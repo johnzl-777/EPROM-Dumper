@@ -11,6 +11,8 @@ As of now, the EPROM dumper program is designed for dumping the Intel D7232A-2 E
 
 There are some pins that, because only a read operation is being performed, are set permanently to LOW. These pins include CE (Chip Enable) and OE/Vpp (Output Enable/Programming Voltage Input) with only Vcc (Usually +5V standard power input) being high and fed from the Arduino itself. 
 
+More information about the D27232A-2 can be found here: [D27232A-2 Datasheet] (http://www.datasheets360.com/pdf/4657049655793235876)
+
 The EPROM Dumper works as such:
 
 1. Setup
@@ -27,12 +29,9 @@ The EPROM Dumper works as such:
        * Second half of the unsigned integer is assigned to C port register
        * Data is printed using the "print_data" function in the program that shows both the address and data or just data
 3. Termination
-  1. 500 ms delay initiated (needed because of lag between data received on Arduino and transmitted to computer)
-  2. exit(0); activated, stops the loop
+   1. 500 ms delay initiated (needed because of lag between data received on Arduino and transmitted to computer)
+   2. exit(0); activated, stops the loop
    
-___
-
-## Pinout
 
 
       
