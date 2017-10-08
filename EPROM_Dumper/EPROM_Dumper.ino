@@ -5,7 +5,11 @@ void setup()
 { 
    Serial.begin(9600); // Opens Serial Port to receive data
    
-   DDRL = B00000000;  //Sets up L-pins as 8-bit input A + C as 16 bit output
+   /*
+    *Sets up L-pins as 8-bit input A + C as 16 bit output
+    */
+   
+   DDRL = B00000000; 
    DDRA = B11111111;  //Lower address
    DDRC = B11111111;  //Upper address
 
