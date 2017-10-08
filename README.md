@@ -10,4 +10,8 @@ The EPROM Dumper simply cycles through all the possible address locations while 
 The EPROM Dumper works as such:
 
 1. Setup
-..1. Serial port open to 9600 Baud (standard rate)
+  1. Serial port open to 9600 Baud (standard rate)
+  2. Set pins on L port register as Input (This will be the data bus)
+  3. Set pins on A and C port registers as Output (This will be the address bus)
+    * A - Lower part of the address
+    * B - Upper part of the address
