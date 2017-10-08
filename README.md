@@ -29,7 +29,7 @@ The EPROM Dumper works as such:
        * Data is printed using the "print_data" function in the program that shows both the address and data or just data
 3. Termination
    1. 500 ms delay initiated (needed because of lag between data received on Arduino and transmitted to computer)
-   2. exit(0); activated, stops the loop
+   2. `exit(0);` activated, stops the loop
    
 
 
