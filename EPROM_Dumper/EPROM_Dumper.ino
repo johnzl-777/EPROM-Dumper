@@ -37,6 +37,7 @@ void loop()
  * Prints the necessary address data and data collected with it as well
  * Uses a "full_data" boolean value to allow the printing of address and data or just data
  */
+
 void print_data(bool full_data)
 {
 
