@@ -31,19 +31,19 @@ The EPROM Dumper works as such:
    1. 500 ms delay initiated (needed because of lag between data received on Arduino and transmitted to computer)
    2. `exit(0);` activated, stops the loop
    
-##To-Do
+## To-Do
 
 These are things I might possibly consider doing with the program later in time. 
 
-###High priority
+### High priority
 * Experiment with increasing baud rate
 * Find a better way to print data (alternative to Serial.print)
 * Automatically save data into a text file
 
-###Medium priority
+### Medium priority
 * Add an LED status indicator (Busy/Complete)
 
-###Low priority
+### Low priority
 * Add an LED decimal/LCD to show each byte read
 * Add multiple LED's to indicate 25%, 50%, and 75% completion of read
 * Use the Atmega328 DIP chip and create a dedicated reader
