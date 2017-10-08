@@ -10,4 +10,4 @@ The EPROM Dumper simply cycles through all the possible address locations while 
 The EPROM Dumper works as such:
 
 1. Setup
-  * Serial port open to 9600 Baud (standard rate)
+..1. Serial port open to 9600 Baud (standard rate)
