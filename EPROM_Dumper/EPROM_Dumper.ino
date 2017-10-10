@@ -5,9 +5,9 @@ void setup()
 { 
    Serial.begin(9600); // Opens Serial Port to receive data
    
-   DDRL = B00000000;  //Sets up L-pins as 8-bit input A + C as 16 bit output
-   DDRA = B11111111;  //Lower address
-   DDRC = B11111111;  //Upper address
+   DDRL = B00000000;  //Sets up L register pins as 8-bit input 
+   DDRA = B11111111;  //Lower address (A register pins)
+   DDRC = B11111111;  //Upper address (C register pins)
 
    PORTA = B00000000; //Sets output data on pin register A as 0
    PORTC = B00000000; //Sets output data on pin register C as 0
