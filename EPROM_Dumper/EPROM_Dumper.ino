@@ -43,20 +43,28 @@ void loop()
 void print_data(bool full_data)
 {
 
-  if(full_data) //If data option is 1 (TRUE)
+  char print_str[10];
+
+  if(full_data)                 //If data option is 1 (TRUE)
   {
     Serial.print(PINL, HEX);    //Print data received from L register pins
     Serial.print(" ");          //Print a space 
     Serial.print(PORTC, BIN);   //Print Upper Address
     Serial.print(" ");          //Print a space
-    Serial.print(PORTA, BIN);   //Print Lower Address
     Serial.print("\n");
+     * The upper and lower halves of the address are printed in hex first, followed by the byte of data read, also in hex
+     */
+    sprintf(print_str, "%02X %02X %02X", PORTC, PORTA, PINL); 
+    Serial.println(print_str);
     
   }
   else                          //If data option is 0 (FALSE)
   {
-    Serial.print(PINF, HEX);    //Print data received from L register pins
-    Serial.print(" ");          //Print space
+    /*
+     * Only the data received is printed 
+     */
+    sprintf(print_str, "%02X", PINL);
+    Serial.println(print_str);
   }
 }
 
