@@ -31,6 +31,10 @@ The EPROM Dumper works as such:
    1. 500 ms delay initiated (needed because of lag between data received on Arduino and transmitted to computer)
    2. `exit(0);` activated, stops the loop
    
+## Bugs
+
+Please see the Issues tab of this project for any information on bugs. 
+   
 ## To-Do
 
 These are things I might possibly consider doing with the EPROM dumper later in time. 
